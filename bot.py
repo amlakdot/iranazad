@@ -48,15 +48,18 @@ def send_document(content: str, config_count: int):
         "inline_keyboard": [
             [
                 {
-                    "text": "ایران ازاد",
+                    "text": "🕊ایران آزاد",
                     "url": "https://t.me/XIXVPN"
                 }
             ]
         ]
     }
 
+    # اسم فایل ارسالی در تلگرام
+    filename = "@XIXVPN ایران آزاد 🕊.txt"
+
     files = {
-        "document": ("VIP.txt", content.encode("utf-8"), "text/plain")
+        "document": (filename, content.encode("utf-8"), "text/plain")
     }
 
     data = {
